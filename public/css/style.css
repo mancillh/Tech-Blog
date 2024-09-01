@@ -1,9 +1,17 @@
-.navbar {
-    background-color: black;
-    height: 175px;
+html {
+    line-height: 1.15;
 }
 
-.navbar a{
+body {
+    margin: 0;
+}
+
+.navbar {
+    background-color: black;
+    height: 165px;
+}
+
+.navbar a {
     display: flex;
     float: left;
     color: #ccc;
@@ -11,11 +19,11 @@
     font-weight: 900;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 18px;
-    margin: 10px 20px 10px 20px;
+    margin: 10px 20px 10px 36px;
     background-color: black;
 }
 
-.navbar a:hover{
+.navbar a:hover {
     background-color: lavender;
     border-radius: 8px;
     color: black;
@@ -23,14 +31,53 @@
 
 .navbar h1 {
     margin: 0px;
+    font-size: 30px;
 }
 
 .title-container {
     background-color: lavender;
-    margin-left: 30px;
+    margin-left: 50px;
     margin-bottom: 30px;
     padding: 5px 15px 10px 15px;
     border-radius: 10px;
     box-shadow: 5px 5px 2px 1px grey;
 }
 
+.blog {
+    background-color: lavender;
+    border: black;
+    border-style: solid;
+}
+
+.row-header {
+    background-color: black;
+    height: 40px;
+    width: 100%;
+    display: inline;
+}
+
+.row h3 {
+    background-color: black;
+    position: relative;
+}
+
+.row a {
+    background-color: black;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #ccc;
+    text-decoration: none;
+    width: 60%;
+}
+
+.row h3 span:last-child {
+    position: absolute;
+    right: 0px;  
+    color: #ccc;
+    font-size: 16px;
+    margin-top: 8px;
+}
+
+.row p {
+    padding: 15px 15px 0px 15px;
+    line-height: 1.15;
+}

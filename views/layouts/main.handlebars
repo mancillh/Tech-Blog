@@ -16,30 +16,27 @@
       <nav class="navbar">
         <div class="container-fluid">
           <span class="navbar-brand mb-0 h1">
-        <!-- Conditionally render login or logout links -->
-        {{#if logged_in}}
-        <a href="/">Home</a> 
-        <a href="/dashboard">Dashboard</a> 
-        <a id="logout" href="/api/users/logout">Logout</a> 
-        {{else}}
-        <a href="/">Home</a> 
-        <a href="/login">Dashboard</a> 
-        <a href="/login">Login</a>
-        {{/if}}
-        </span></div>
-        <div class="title-container">
-        <h1>The Tech Blog</h1>
-        </div>
-      </nav>
-    </header>
-    <main class="container container-fluid mt-5">
-      <!-- Render the sub layout -->
-      {{{ body }}}
-    </main>
-    <footer>
-
-    </footer>
-  </div>
+            <!-- Conditionally render login or logout links -->
+            {{#if logged_in}}
+            <a href="/">Home</a>
+            <a href="/dashboard">Dashboard</a>
+            <a id="logout" href="/api/users/logout">Logout</a>
+            {{else}}
+            <a href="/">Home</a>
+            <a href="/login">Dashboard</a>
+            <a href="/login">Login</a>
+            {{/if}}
+          </span></div>
+          <div class="title-container">
+            <h1>The Tech Blog</h1>
+          </div>
+          </nav>
+          </header>
+          <main class="container mt-5">
+            <!-- Render the sub layout -->
+            {{{ body }}}
+          </main>
+          </div>
 
   <!-- Render script for logged in users only -->
   {{#if logged_in}}
