@@ -1,0 +1,36 @@
+.navbar {
+    background-color: black;
+    height: 175px;
+}
+
+.navbar a{
+    display: flex;
+    float: left;
+    color: #ccc;
+    text-decoration: none;
+    font-weight: 500;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 18px;
+    margin: 10px 20px 10px 20px;
+    background-color: black;
+}
+
+.navbar a:hover{
+    background-color: lavender;
+    border-radius: 8px;
+    color: black;
+}
+
+.navbar h1 {
+    margin: 0px;
+}
+
+.title-container {
+    background-color: lavender;
+    margin-left: 30px;
+    margin-bottom: 30px;
+    padding: 5px 15px 10px 15px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 2px 1px grey;
+}
+
