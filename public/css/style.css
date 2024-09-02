@@ -6,6 +6,35 @@ body {
     margin: 0;
 }
 
+/* Thank you to username sparanoid on stackoverflow.com for CSS color manipulation formulas 
+(https://stackoverflow.com/questions/1625681/dynamically-change-color-to-lighter-or-darker-by-percentage-css) */
+:root {
+    --link-color-h: 240;
+    --link-color-s: 67%;
+    --link-color-l: 94%;
+    --link-color-hsl: var(--link-color-h), var(--link-color-s), var(--link-color-l);
+
+    --link-color: hsl(var(--link-color-hsl));
+    --link-color-10: hsla(var(--link-color-hsl), .1);
+    --link-color-20: hsla(var(--link-color-hsl), .2);
+    --link-color-30: hsla(var(--link-color-hsl), .3);
+    --link-color-40: hsla(var(--link-color-hsl), .4);
+    --link-color-50: hsla(var(--link-color-hsl), .5);
+    --link-color-60: hsla(var(--link-color-hsl), .6);
+    --link-color-70: hsla(var(--link-color-hsl), .7);
+    --link-color-80: hsla(var(--link-color-hsl), .8);
+    --link-color-90: hsla(var(--link-color-hsl), .9);
+  
+    --link-color-warm: hsl(calc(var(--link-color-h) + 80), var(--link-color-s), var(--link-color-l));
+    --link-color-cold: hsl(calc(var(--link-color-h) - 80), var(--link-color-s), var(--link-color-l));
+  
+    --link-color-low: hsl(var(--link-color-h), calc(var(--link-color-s) / 2), var(--link-color-l));
+    --link-color-lowest: hsl(var(--link-color-h), calc(var(--link-color-s) / 4), var(--link-color-l));
+  
+    --link-color-light: hsl(var(--link-color-h), var(--link-color-s), calc(var(--link-color-l) / .9));
+    --link-color-dark: hsl(var(--link-color-h), var(--link-color-s), calc(var(--link-color-l) * .9));
+  }
+
 .navbar {
     background-color: black;
     height: 165px;
@@ -14,7 +43,7 @@ body {
 .navbar a {
     display: flex;
     float: left;
-    color: #ccc;
+    color: lavender;
     text-decoration: none;
     font-weight: 900;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -50,6 +79,8 @@ body {
     height: 100vh;
 }
 
+/* Styling for Blog entries on main page */
+
 .blog {
     background-color: lavender;
     border: black;
@@ -63,28 +94,157 @@ body {
     display: inline;
 }
 
-.row h3 {
+.homepage-row h3 {
     background-color: black;
     position: relative;
 }
 
-.row a {
+.homepage-row a {
     background-color: black;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    color: #ccc;
+    color: lavender;
     text-decoration: none;
     width: 60%;
 }
 
-.row h3 span:last-child {
+.homepage-row h3 span:last-child {
     position: absolute;
     right: 0px;  
-    color: #ccc;
+    color: lavender;
     font-size: 16px;
     margin-top: 8px;
 }
 
-.row p {
+.homepage-row p {
     padding: 15px 15px 0px 15px;
     line-height: 1.15;
+}
+
+/* Styling for Log In, Sign Up, Create Blog Forms */
+
+.whole-form {
+    border-style: solid;
+    border-color: black;
+    background-color: var(--link-color-dark);
+    
+}
+
+label {
+    position: absolute;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: black;
+    font-weight: 800;
+    margin: 6px;
+}
+
+form {
+    text-align: center;
+}
+
+.form-input {
+    background-color:  var(--link-color-90);
+    border: black;
+    border-style: solid;
+    border-width: 2px;
+    width: 300px; 
+    padding: 12px 20px;
+    margin: 8px 0;
+}
+
+#form-btn {
+    background-color: var(--link-color-90);
+    color:black;
+    border: black;
+    border-style: solid;
+    border-width: 2px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+#form-btn:hover {
+    background-color: black;
+    color: lavender;
+}
+
+.sign-up-instead {
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+.sign-up-instead a {
+    color: black;
+}
+
+.sign-up-instead a:hover {
+    color: lavender;
+}
+
+.form-title {
+    background-color: black;
+}
+
+.form-title h2 {
+    color: lavender;
+    text-align: center;
+    padding: 10px;
+}
+
+.form-title h3 {
+    color: lavender;
+    text-align: center;
+    padding: 10px;
+}
+
+/* Styling for Dashboard */
+
+.current-blogs-title {
+    background-color: black;
+    padding-top: 10px;
+}
+
+.current-blogs-title h3 {
+    color: lavender;
+    text-align: center;
+    height: 45px;
+}
+
+#dashboard-row h4 {
+    background-color: var(--link-color-dark);
+    padding: 5px;
+}
+
+#dashboard-row a {
+    color: black;
+    text-decoration: none;
+    padding-top: 7px;
+}
+
+#dashboard-row a:hover {
+    background-color: var(--link-color-90);
+    padding: 0;
+}
+
+#dashboard-row {
+    border: black;
+    border-style: solid;
+    border-width: 2px;
+    background-color: var(--link-color-dark);
+    width: 546px;
+    margin-left: 1px;
+}
+
+#delete {
+    background-color: grey;
+    color: black;
+    border: black;
+    border-style: solid;
+    border-width: 2px;
+    font-weight: 700;
+    /* margin-bottom: 10px; */
+    margin: 10px 0px;
+}
+
+#delete:hover {
+    background-color: rgb(242, 22, 58);
+    color: black;
 }

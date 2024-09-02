@@ -2,16 +2,19 @@
     {
         "title": "Why Sleep Is So Important",
         "author": "Sal",
-        "content": "Sleep is just so important..."
+        "content": "Sleep is just so important...",
+        "date_created": "8/30/24"
     },
     {
         "title": "Artifical Nails Are FIREEEEEEEEEEEEEEEE!",
         "author": "Lernantino",
-        "content": "Girl, I just got them done!"
+        "content": "Girl, I just got them done!",
+        "date_created": "9/01/24"
     },
     {
         "title": "Bingo Is Not Just For the Elderly",
         "author": "Sal",
-        "content": "Love me some bingo"
+        "content": "Love me some bingo",
+        "date_created": "8/30/24"
     }
 ]
