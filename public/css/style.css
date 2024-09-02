@@ -240,11 +240,19 @@ form {
     border-style: solid;
     border-width: 2px;
     font-weight: 700;
-    /* margin-bottom: 10px; */
     margin: 10px 0px;
 }
 
 #delete:hover {
     background-color: rgb(242, 22, 58);
     color: black;
+}
+
+/* Styling for Blog Page (when user clicks blog title) (/blog/:id) */
+.blog-box {
+    background-color: var(--link-color-dark);
+    color: black;
+    border: black;
+    border-style: solid;
+    border-width: 2px;
 }
