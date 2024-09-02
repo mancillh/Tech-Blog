@@ -11,32 +11,34 @@
 </head>
 
 <body>
-  <div class="flex-column justify-space-around">
-    <header class="display-flex">
-      <nav class="navbar">
-        <div class="container-fluid">
-          <span class="navbar-brand mb-0 h1">
-            <!-- Conditionally render login or logout links -->
-            {{#if logged_in}}
-            <a href="/">Home</a>
-            <a href="/dashboard">Dashboard</a>
-            <a id="logout" href="/api/users/logout">Logout</a>
-            {{else}}
-            <a href="/">Home</a>
-            <a href="/login">Dashboard</a>
-            <a href="/login">Login</a>
-            {{/if}}
-          </span></div>
-          <div class="title-container">
-            <h1>The Tech Blog</h1>
-          </div>
-          </nav>
-          </header>
-          <main class="container mt-5">
-            <!-- Render the sub layout -->
-            {{{ body }}}
-          </main>
-          </div>
+  <header class="main-header">
+    <nav class="navbar">
+      <div class="container-fluid">
+        <span class="navbar-brand mb-0 h1">
+          <!-- Conditionally render login or logout links -->
+          {{#if logged_in}}
+          <a href="/">Home</a>
+          <a href="/dashboard">Dashboard</a>
+          <a id="logout" href="/api/users/logout">Logout</a>
+          {{else}}
+          <a href="/">Home</a>
+          <a href="/login">Dashboard</a>
+          <a href="/login">Login</a>
+          {{/if}}
+        </span>
+      </div>
+      <div class="title-container">
+        <h1>The Tech Blog</h1>
+      </div>
+    </nav>
+  </header>
+  <div class="page">
+    <main class="container ">
+      <!-- Render the sub layout -->
+      {{{ body }}}
+    </main>
+  </div>
+
 
   <!-- Render script for logged in users only -->
   {{#if logged_in}}

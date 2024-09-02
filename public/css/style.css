@@ -43,6 +43,13 @@ body {
     box-shadow: 5px 5px 2px 1px grey;
 }
 
+.page {
+    background-color: lavender;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    height: 100vh;
+}
+
 .blog {
     background-color: lavender;
     border: black;
