@@ -2,7 +2,7 @@
 <div class="text-center">
   <h2>{{title}}</h2>
   <p>{{content}}</p>
-  <p>Created by {{user.username}} on {{format_date date_created}}</p>
+  <p class="blog-box-created-by">Created by {{user.username}} on {{format_date date_created}}</p>
 </div>
 </div>
 
@@ -19,3 +19,12 @@
         <button class="btn" id="form-btn" type="submit">Post Your Comment</button>
       </div>
     </form>
+
+<!-- Loop over each object in the blogs array -->
+{{#each comments as |comment| }}
+<div>
+  <span class="created-by">{{user.username}} says.... </span>
+  <p>{{comment}}</p>
+  <p>on {{format_date date_created}}</p>
+</div>
+{{/each}}

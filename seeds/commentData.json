@@ -1,0 +1,20 @@
+[
+    {
+        "comment": "Lorem ipsum odor amet, consectetuer adipiscing elit.",
+        "date_created": "9/1/24",
+        "user_id": 2,
+        "blog_id": 1
+    },
+    {
+        "comment": "I mean... Not really",
+        "date_created": "9/1/24",
+        "user_id": 2,
+        "blog_id": 2
+    },
+    {
+        "comment": "Totally agree!",
+        "date_created": "9/1/24",
+        "user_id": 1,
+        "blog_id": 3
+    }
+]

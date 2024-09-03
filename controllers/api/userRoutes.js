@@ -50,16 +50,16 @@ router.post('/login', async (req, res) => {
 
 router.post('/comment', async (req, res) => {
   try {
-    const userData = await User.findOne({ where: { username: req.body.username } });
-
-    req.session.save(() => {
-      req.session.user_id = userData.id;
-
-      res.status(200).json(userData);
+    const newComment = await Comment.create({
+        comment: req.body.comment,
+        post_id: req.body.post_id,
+        user_id: req.session.user_id, 
     });
-  } catch (err) {
-    res.status(404).end();
-  }
+
+    res.status(200).json(newComment);
+} catch (err) {
+    res.status(500).json(err);
+}
 });
 
 router.post('/logout', (req, res) => {

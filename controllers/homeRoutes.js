@@ -108,4 +108,12 @@ router.get('/signup', (req, res) => {
   res.render('signup');
 });
 
+router.get('/comment', (req, res) => {
+  if (req.session.logged_in) {
+    res.redirect('/dashboard');
+    return;
+  }
+  res.render('blog');
+});
+
 module.exports = router;
