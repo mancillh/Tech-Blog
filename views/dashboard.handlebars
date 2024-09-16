@@ -21,12 +21,12 @@
   </div>
   </div>
 
-  {{#if blogs.length}}
+  
   <div class="col-md-6 blog-list">
     <div class="current-blogs-title">
     <h3>Current Blogs:</h3>
     </div>
-
+{{#if blogs.length}}
     {{#each blogs as |blog|}}
     <div class="row mb-2" id="dashboard-row">
       <div class="col-md-10">
@@ -36,7 +36,9 @@
         <button class="btn btn-sm" id="delete" data-id="{{blog.id}}">DELETE</button>
       </div>
     </div>
-    {{/each}}
+    {{/each}} 
+    {{else}}
+    <p class ="no-entries-paragraph">You currently have no blog entries.</p>
   </div>
   {{/if}}
 </div>

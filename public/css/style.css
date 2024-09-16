@@ -256,6 +256,11 @@ form {
     color: black;
 }
 
+.no-entries-paragraph {
+    margin-left: 10px;
+    font-size: 24px;
+}
+
 /* Styling for Blog Page (when user clicks blog title) (/blog/:id) */
 .blog-box {
     background-color: var(--link-color-dark);
@@ -280,3 +285,4 @@ form {
     background-color: aqua;
     color: black;
 }
+
