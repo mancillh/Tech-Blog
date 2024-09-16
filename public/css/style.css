@@ -275,3 +275,8 @@ form {
     font-weight: 600;
     padding-top: 20px;
 }
+
+.posted-comment {
+    background-color: aqua;
+    color: black;
+}
