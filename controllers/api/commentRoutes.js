@@ -2,16 +2,11 @@ const router = require('express').Router();
 const { Comment } = require('../../models');
 const withAuth = require('../../utils/auth');
 
+// get all comments
 router.get('/', async (req, res) => {
     try {
       // Get all blogs and JOIN with user data
-      const commentData = await Comment.findAll({
-        include: [
-          {
-            model: User, Blog
-          },
-        ],
-      });
+      const commentData = await Comment.findAll();
   
       // Serialize data so the template can read it
       const comments = commentData.map((comment) => comment.get({ plain: true }));
@@ -30,7 +25,7 @@ router.post('/', withAuth, async (req, res) => {
     try {
         const newComment = await Comment.create({
             ...req.body,
-            user_id: req.body.user_id,
+            user_id: req.session.user_id,
         });
         res.status(200).json(newComment);
     } catch (err) {
@@ -44,7 +39,6 @@ router.delete('/:id', async (req, res) => {
         const commentData = await Comment.destroy({
             where: {
                 id: req.params.id,
-                user_id: req.session.user_id,
             },
         });
 
