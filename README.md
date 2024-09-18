@@ -16,13 +16,20 @@
   * [Questions](#questions)
   
   ## Installation
-  The site will be deployed for access on any web browser.
+  The site is deployed at this URL for access on any web browser: https://mancill-tech-blog.onrender.com/
 
   ## Usage
-  
+  Here is the URL of the deployed site: https://mancill-tech-blog.onrender.com/
+
+  Screenshots of the site:
+  ![Homepage](<assets/images/tech blog screenshot homepage.JPG>)
+  ![Dashboard](<assets/images/tech blog screenshot dashboard.JPG>)
+  ![Update](<assets/images/tech blog screenshot update.JPG>)
+  ![Login](<assets/images/tech blog screenshot login.JPG>)
+  ![Signup](<assets/images/tech blog screenshot signup.JPG>)
 
   ## Credits
-  N/A
+  Blog excerpts from Medium.com
 
   ## License
   This application is covered under MIT License
