@@ -1,20 +1,20 @@
 [
     {
-        "title": "Why Sleep Is So Important",
+        "title": "33 Concepts Every JavaScript Developer Should Know",
         "user_id": 1,
-        "content": "Sleep is just so important...",
+        "content": "How much of JavaScript do you really think you know? You probably know how to write functions, understand simple algorithms, and can even write a class. But do you know what a typed array is?",
         "date_created": "8/30/24"
     },
     {
-        "title": "Artifical Nails Are FIREEEEEEEEEEEEEEEE!",
+        "title": "10 Advanced JavaScript Tricks You Don’t Know",
         "user_id": 2,
-        "content": "Girl, I just got them done!",
+        "content": "avaScript is a versatile language with many hidden features that can make your development process more efficient and your code cleaner. Here are 10 advanced JavaScript tricks that you might not know, but which can significantly enhance your coding skills.",
         "date_created": "9/01/24"
     },
     {
-        "title": "Bingo Is Not Just For the Elderly",
+        "title": "The JSON.stringify() You Don’t Know About",
         "user_id": 3,
-        "content": "Love me some bingo",
+        "content": "We are familiar with JSON.stringify, which is generally used for serialization (deep copy). It converts our objects into a JSON string. This method is indeed very convenient in our work, however, this method also has some disadvantages, which we seldom encounter.",
         "date_created": "8/30/24"
     },
     {

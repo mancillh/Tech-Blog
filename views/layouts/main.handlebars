@@ -23,7 +23,8 @@
           <a href="/dashboard">Dashboard</a>
           <a id="logout" href="/api/users/logout">Logout</a>
           {{else}}
-          {{!-- if user is logged out, display "home" and "login" options, redirect to login if they click "dashboard" --}}
+          {{!-- if user is logged out, display "home" and "login" options, redirect to login if they click "dashboard"
+          --}}
           <a href="/">Home</a>
           <a href="/login">Dashboard</a>
           <a href="/login">Login</a>
@@ -37,7 +38,7 @@
   </header>
   <div class="page">
     <main class="container ">
-      
+
       {{{ body }}}
     </main>
   </div>

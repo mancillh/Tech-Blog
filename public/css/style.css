@@ -80,9 +80,8 @@ body {
 }
 
 /* Styling for Blog entries on homepage */
-
 .blog {
-    background-color: lavender;
+    background-color: var(--link-color-dark);
     border: black;
     border-style: solid;
 }
@@ -348,7 +347,7 @@ for help with the overflow styling here */
     margin: 20px 0px 5px;
 }
 
-.join-conversation a{
+.join-conversation a {
     color: black;
 }
 

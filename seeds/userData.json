@@ -1,25 +1,23 @@
 [
-    {
-      "first_name": "Sal",
-      "last_name": "Khan",
-      "username": "Sal451",
-      "email": "sal@hotmail.com",
-      "password": "password12345"
-    },
-    {
-      "first_name": "Toby",
-      "last_name": "Lernantino",
-      "username": "tLernsFast",
-      "email": "lernantino@gmail.com",
-      "password": "password12345"
-    },
-    {
-      "first_name": "Amiko",
-      "last_name": "Jonas",
-      "username": "mikomiko20",
-      "email": "amiko2k20@aol.com",
-      "password": "password12345"
-    }
-  ]
-  
-  
+  {
+    "first_name": "Sal",
+    "last_name": "Khan",
+    "username": "Sal451",
+    "email": "sal@hotmail.com",
+    "password": "password12345"
+  },
+  {
+    "first_name": "Toby",
+    "last_name": "Lernantino",
+    "username": "tLernsFast",
+    "email": "lernantino@gmail.com",
+    "password": "password12345"
+  },
+  {
+    "first_name": "Amiko",
+    "last_name": "Jonas",
+    "username": "mikomiko20",
+    "email": "amiko2k20@aol.com",
+    "password": "password12345"
+  }
+]
