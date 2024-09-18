@@ -2,6 +2,8 @@ const commentFormHandler = async (event) => {
     event.preventDefault();
   
     const comment = document.querySelector('#comment').value.trim();
+
+    // Special thanks to instructor Darian Mendez who helped with the logic for pathname and blog_id here
     const pathname = window.location.pathname.split('/');
     const blog_id = pathname[pathname.length-1];
 

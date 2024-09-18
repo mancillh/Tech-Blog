@@ -24,16 +24,16 @@ body {
     --link-color-70: hsla(var(--link-color-hsl), .7);
     --link-color-80: hsla(var(--link-color-hsl), .8);
     --link-color-90: hsla(var(--link-color-hsl), .9);
-  
+
     --link-color-warm: hsl(calc(var(--link-color-h) + 80), var(--link-color-s), var(--link-color-l));
     --link-color-cold: hsl(calc(var(--link-color-h) - 80), var(--link-color-s), var(--link-color-l));
-  
+
     --link-color-low: hsl(var(--link-color-h), calc(var(--link-color-s) / 2), var(--link-color-l));
     --link-color-lowest: hsl(var(--link-color-h), calc(var(--link-color-s) / 4), var(--link-color-l));
-  
+
     --link-color-light: hsl(var(--link-color-h), var(--link-color-s), calc(var(--link-color-l) / .9));
     --link-color-dark: hsl(var(--link-color-h), var(--link-color-s), calc(var(--link-color-l) * .9));
-  }
+}
 
 .navbar {
     background-color: black;
@@ -109,7 +109,7 @@ body {
 
 .homepage-row h3 span:last-child {
     position: absolute;
-    right: 0px;  
+    right: 0px;
     color: lavender;
     font-size: 16px;
     margin-top: 8px;
@@ -141,18 +141,18 @@ form {
 }
 
 .form-input {
-    background-color:  var(--link-color-90);
+    background-color: var(--link-color-90);
     border: black;
     border-style: solid;
     border-width: 2px;
-    width: 500px; 
+    width: 500px;
     padding: 12px 20px;
     margin: 8px 0;
 }
 
 #form-btn {
     background-color: var(--link-color-90);
-    color:black;
+    color: black;
     border: black;
     border-style: solid;
     border-width: 2px;
@@ -282,7 +282,55 @@ form {
 }
 
 .posted-comment {
-    background-color: aqua;
+    background-color: var(--link-color-90);
     color: black;
 }
 
+.comment-section-title {
+    background-color: black;
+    padding-top: 10px;
+    margin-top: 10px;
+}
+
+.comment-section-title h3 {
+    color: lavender;
+    text-align: center;
+    height: 45px;
+}
+
+#comment-section-row {
+    border: black;
+    border-style: solid;
+    border-width: 2px;
+    background-color: var(--link-color-dark);
+    width: 100%;
+    margin-left: 1px;
+}
+
+.posted-comment span {
+    font-weight: 600;
+    font-style: italic;
+    padding-bottom: 5px;
+}
+
+.posted-comment p {
+    font-weight: 600;
+    font-style: italic;
+}
+
+.comment-text {
+    padding-bottom: 5px;
+}
+
+.join-conversation {
+    text-align: center;
+    margin: 20px 0px 5px;
+}
+
+.join-conversation a{
+    color: black;
+}
+
+.join-conversation a:hover {
+    color: grey;
+}

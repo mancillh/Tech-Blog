@@ -22,17 +22,19 @@
   </form>
 </div>
 {{else}}
-  <p><a href="/login">Sign in to comment</a></p>
+  <div class="join-conversation">
+    <a href="/login">Join the conversation! Sign in to comment</a>
+  </div>
 {{/if}}
 
-<div class="col-md-6 posted-comment">
-  <div class="current-blogs-title">
+<div class="col-md-12 posted-comment">
+  <div class="comment-section-title">
     <h3>Comments:</h3>
   </div>
   {{#each comments}}
-  <div class="row mb-2" id="dashboard-row">
+  <div class="row mb-2" id="comment-section-row">
     <span class="created-by">{{user.username}} says.... </span>
-    <div class="col-md-10">
+    <div class="col-md-10 comment-text">
       {{comment}}
     </div>
     <p>on {{format_date date_created}}</p>
