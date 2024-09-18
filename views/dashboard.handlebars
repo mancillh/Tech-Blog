@@ -32,11 +32,11 @@
       <div class="col-md-8">
         <h4><a href="/blog/{{blog.id}}">{{blog.title}}</a></h4>
       </div>
-      <div class="col-md-2 update">
-        <a href="/dashboard/update/{{id}}">UPDATE</a>
+      <div class="col-md-2">
+        <a href="/dashboard/update/{{id}}"><button class="btn btn-sm" id="update">Update</button></a>
       </div>
       <div class="col-md-2">
-        <button class="btn btn-sm" id="delete" data-id="{{blog.id}}">DELETE</button>
+        <button class="btn btn-sm" id="delete" data-id="{{blog.id}}">Delete</button>
       </div>
     </div>
     {{/each}} 

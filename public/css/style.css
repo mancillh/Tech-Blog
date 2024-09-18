@@ -79,7 +79,7 @@ body {
     height: 200vh;
 }
 
-/* Styling for Blog entries on main page */
+/* Styling for Blog entries on homepage */
 
 .blog {
     background-color: lavender;
@@ -216,9 +216,14 @@ form {
     height: 45px;
 }
 
+/* Thanks to Cookie Ninja at https://stackoverflow.com/questions/39175861/how-to-interrupt-a-h4-text-if-too-long 
+for help with the overflow styling here */
 #dashboard-row h4 {
     background-color: var(--link-color-dark);
-    padding: 5px;
+    padding: 10px 5px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 #dashboard-row a {
@@ -261,7 +266,23 @@ form {
     font-size: 24px;
 }
 
-/* Styling for Blog Page (when user clicks blog title) (/blog/:id) */
+#update {
+    background-color: var(--link-color-90);
+    color: black;
+    border: black;
+    border-style: solid;
+    border-width: 2px;
+    font-weight: 700;
+    margin: 10px 0px;
+    padding-top: 5px;
+}
+
+#update:hover {
+    background-color: black;
+    color: lavender;
+}
+
+/* Styling for Blog Page (when user clicks blog title) (/blog/:id) & comment form */
 .blog-box {
     background-color: var(--link-color-dark);
     color: black;
