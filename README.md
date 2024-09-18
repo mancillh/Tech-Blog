@@ -31,6 +31,14 @@
   ## Credits
   Blog excerpts from Medium.com
 
+  Received help from: Darian Mendez 
+  
+  CSS help from:
+  Cookie Ninja at https://stackoverflow.com/questions/39175861/how-to-interrupt-a-h4-text-if-too-long 
+
+  Sparanoid at https://stackoverflow.com/questions/1625681/dynamically-change-color-to-lighter-or-darker-by-percentage-css
+
+
   ## License
   This application is covered under MIT License
   [MIT License Link](https://opensource.org/license/MIT)
