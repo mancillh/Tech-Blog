@@ -1,3 +1,4 @@
+// joins blog, user, and comment tables based on shared data
 const User = require('./User');
 const Blog = require('./Blog');
 const Comment = require('./Comment');

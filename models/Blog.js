@@ -1,3 +1,6 @@
+// model for blog table, lists what's required to create blog post
+// blog id, date_created automatically assigned
+// user_id comes from another table
 const { Model, DataTypes } = require('sequelize');
 const sequelize = require('../config/connection');
 

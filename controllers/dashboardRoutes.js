@@ -1,3 +1,6 @@
+//includes:
+// get routes for root level (/dashboard), /update/:id
+
 const router = require('express').Router();
 const { Blog, User, Comment } = require('../models');
 const withAuth = require('../utils/auth');
@@ -37,6 +40,7 @@ const withAuth = require('../utils/auth');
     }
   });
 
+  //fetches content user created and adds it to update form
   router.get('/update/:id', withAuth, async (req, res) => {
     try {
       const blogData = await Blog.findByPk(req.params.id);

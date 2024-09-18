@@ -1,6 +1,10 @@
+// includes: 
+// post routes for /signup, /login, /logout
+
 const router = require('express').Router();
 const { User } = require('../../models');
 
+//sign up user, automatically logs in user after sign up
 router.post('/signup', async (req, res) => {
   try {
     const userData = await User.create(req.body);
@@ -16,6 +20,7 @@ router.post('/signup', async (req, res) => {
   }
 });
 
+//login user, appears when user is logged out
 router.post('/login', async (req, res) => {
   try {
     const userData = await User.findOne({ where: { username: req.body.username } });
@@ -48,6 +53,7 @@ router.post('/login', async (req, res) => {
   }
 });
 
+//logout user, only appears when user is logged in
 router.post('/logout', (req, res) => {
 
   if (req.session.logged_in) {

@@ -1,3 +1,5 @@
+{{!-- connects to comment.js --}}
+{{!-- displays content of blog post after user clicks on blog title (from homepage or dashboard) --}}
 <div class="blog-box">
   <div class="text-center">
     <h2>{{title}}</h2>
@@ -6,6 +8,7 @@
   </div>
 </div>
 
+{{!-- allows user to comment with a comment form when logged in --}}
 {{#if logged_in}}
 <div class="col-md-6 whole-form comment-form">
   <div class="form-title">
@@ -21,12 +24,14 @@
     </div>
   </form>
 </div>
+{{!-- if user is not logged in, this prompts them to log in to be able to comment --}}
 {{else}}
   <div class="join-conversation">
     <a href="/login">Join the conversation! Sign in to comment</a>
   </div>
 {{/if}}
 
+{{!-- this section displays the comments made below the blog post --}}
 <div class="col-md-12 posted-comment">
   <div class="comment-section-title">
     <h3>Comments:</h3>

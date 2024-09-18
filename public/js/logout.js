@@ -1,3 +1,5 @@
+// connects to main.handlebars so user has ability to logout from any page
+// logout form
 const logout = async (event) => {
   event.preventDefault();
 
@@ -13,5 +15,6 @@ const logout = async (event) => {
     }
   };
   
+  // event listener for submission of log out form
   document.querySelector('#logout').addEventListener('click', logout);
   

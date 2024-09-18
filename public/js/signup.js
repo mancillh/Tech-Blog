@@ -1,3 +1,5 @@
+// connects to signup.handlebars
+// handles sign up form for users who want to make an account
 const signupFormHandler = async (event) => {
     event.preventDefault();
   

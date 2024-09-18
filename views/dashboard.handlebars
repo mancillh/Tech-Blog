@@ -1,3 +1,6 @@
+{{!-- Dashboard page display --}}
+{{!-- connects to dashboard.js --}}
+{{!-- Form that allows logged in user to write a new blog post --}}
 <div class="row mt-4">
   <div class="col-md-6">
     <div class="whole-form">
@@ -21,7 +24,7 @@
   </div>
   </div>
 
-  
+  {{!-- displays all blog titles logged in user has written with buttons to update or delete the posts they wrote --}}
   <div class="col-md-6 blog-list">
     <div class="current-blogs-title">
     <h3>Current Blogs:</h3>
@@ -40,6 +43,7 @@
       </div>
     </div>
     {{/each}} 
+    {{!-- lets the user know they have not written any blog posts if they haven't --}}
     {{else}}
     <p class ="no-entries-paragraph">You currently have no blog entries.</p>
   </div>

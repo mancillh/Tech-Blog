@@ -1,3 +1,6 @@
+//includes:
+// get routes for root level, /blogs/:id, /login, /signup
+
 const router = require('express').Router();
 const { Blog, User, Comment } = require('../models');
 

@@ -1,3 +1,6 @@
+// model for comment table, lists what's required to create comment
+// comment id, date_created automatically assigned
+// user_id and blog_id come from other tables
 const { Model, DataTypes } = require('sequelize');
 const sequelize = require('../config/connection');
 

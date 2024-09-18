@@ -1,3 +1,5 @@
+// connects to update.handlebars
+// handles updating existing blog posts (user accesses update capability from dashboard)
 const updateFormHandler = async (event) => {
     event.preventDefault();
   
@@ -22,6 +24,7 @@ const updateFormHandler = async (event) => {
     }
   };
   
+  // event listener for submission of update form
   document
     .querySelector('.update-form')
     .addEventListener('submit', updateFormHandler);

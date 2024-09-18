@@ -1,3 +1,4 @@
+{{!-- displays black "header" band with "The Tech Blog" logo on all pages --}}
 <!DOCTYPE html>
 <html lang="en">
 
@@ -16,11 +17,13 @@
       <div class="container-fluid">
         <span class="navbar-brand mb-0 h1">
           <!-- Conditionally render login or logout links -->
+          {{!-- if user is logged in, display "home", "dashboard", and "logout" options --}}
           {{#if logged_in}}
           <a href="/">Home</a>
           <a href="/dashboard">Dashboard</a>
           <a id="logout" href="/api/users/logout">Logout</a>
           {{else}}
+          {{!-- if user is logged out, display "home" and "login" options, redirect to login if they click "dashboard" --}}
           <a href="/">Home</a>
           <a href="/login">Dashboard</a>
           <a href="/login">Login</a>
@@ -34,13 +37,13 @@
   </header>
   <div class="page">
     <main class="container ">
-      <!-- Render the sub layout -->
+      
       {{{ body }}}
     </main>
   </div>
 
 
-  <!-- Render script for logged in users only -->
+  <!-- Render logout script for logged in users only -->
   {{#if logged_in}}
   <script src="/js/logout.js"></script>
   {{/if}}

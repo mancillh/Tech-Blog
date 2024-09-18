@@ -1,3 +1,4 @@
+// Connects to blog.handlebars, logic for comment form, posts comment beneath blog on submit
 const commentFormHandler = async (event) => {
     event.preventDefault();
   
@@ -24,6 +25,7 @@ const commentFormHandler = async (event) => {
     }
   };
 
+// event listener for submission of comment form
 document
 .querySelector('.actual-comment-form')
 .addEventListener('submit', commentFormHandler);

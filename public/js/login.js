@@ -1,3 +1,5 @@
+// connects to login.handlebars
+// allows user to log in on login page, sends user to dashboard on login
 const loginFormHandler = async (event) => {
     event.preventDefault();
   
@@ -22,6 +24,7 @@ const loginFormHandler = async (event) => {
     }
   };
   
+  // event listener for submit of login form
   document
     .querySelector('.login-form')
     .addEventListener('submit', loginFormHandler);
